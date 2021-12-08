@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.xxyopen</groupId>
+    <artifactId>xxy-common</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <modules>
+        <module>xxy-cache</module>
+    </modules>
+    <packaging>pom</packaging>
+    <description>xxy开源公共依赖项目，包括通用工具包、通用缓存、通用日志、通用web配置等</description>
+    <url>https://github.com/xxyopen/xxy-common</url>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <junit.version>4.13.2</junit.version>
+        <lombok.version>1.18.16</lombok.version>
+    </properties>
+
+    <dependencies>
+        <!-- 全局单元测试 -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- 全局Lombok代码生成 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <!--项目的问题管理系统(Bugzilla, Jira, Scarab,或任何你喜欢的问题管理系统)的名称和URL，主要用于生成项目文档-->
+    <issueManagement>
+        <system>Github Issue</system>
+        <url>https://github.com/xxyopen/xxy-common/issues</url>
+    </issueManagement>
+
+    <!--该元素描述了项目所有License列表。 应该只列出该项目的license列表，不要列出依赖项目的 license列表。
+    如果列出多个license，用户可以选择它们中的一个而不是接受所有license。-->
+    <licenses>
+        <license>
+            <!--license用于法律上的名称-->
+            <name>Apache License 2.0</name>
+            <!--官方的license正文页面的URL-->
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+            <!--项目分发的主要方式：
+              repo，可以从Maven库下载
+              manual， 用户必须手动下载和安装依赖-->
+            <distribution>repo</distribution>
+            <!--关于license的补充信息-->
+            <comments>...</comments>
+        </license>
+    </licenses>
+
+    <!--项目开发者列表-->
+    <developers>
+        <developer>
+            <!--项目开发者的全名-->
+            <name>xxy</name>
+            <!--项目开发者的email-->
+            <email>1179705413@qq.com</email>
+            <!--项目开发者的主页的URL-->
+            <url>https://github.com/201206030</url>
+            <!--项目开发者在项目中扮演的角色，角色元素描述了各种角色-->
+            <roles>
+                <role>Project Manager</role>
+            </roles>
+            <!--项目开发者所属组织-->
+            <organization>xxyOpen</organization>
+            <!--项目开发者所属组织的URL-->
+            <organizationUrl>https://github.com/xxyOpen</organizationUrl>
+        </developer>
+    </developers>
+
+    <build>
+        <plugins>
+            <!-- 指定JDK的编译版本，否则会使用compiler插件默认的JDK版本号 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <!-- javadoc:jar creates an archive file of the generated Javadocs.
+            It is used during the release process to create the Javadoc artifact for the project's release.
+            This artifact is uploaded to the remote repository along with the project's compiled binary and source archive -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.1.1</version>
+                <!-- Binds by default to the lifecycle phase: package.
+                 javadoc:jar 默认绑定到package生命周期 -->
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
