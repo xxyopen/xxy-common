@@ -9,8 +9,8 @@ package io.github.xxyopen.util;
 public class StringUtil {
 
     /**
-     * 将驼峰式命名的字符串转换为下划线大写方式。如果转换前的驼峰式命名的字符串为空，则返回空字符串。</br>
-     * 例如：HelloWorld->HELLO_WORLD
+     * 将驼峰式命名的字符串转换为下划线大写方式。如果转换前的驼峰式命名的字符串为空，则返回空字符串。
+     * 例如：HelloWorld-HELLO_WORLD
      * @param name 转换前的驼峰式命名的字符串
      * @return 转换后下划线大写方式命名的字符串
      */
@@ -34,8 +34,8 @@ public class StringUtil {
     }
 
     /**
-     * 将下划线大写方式命名的字符串转换为驼峰式。如果转换前的下划线大写方式命名的字符串为空，则返回空字符串。</br>
-     * 例如：HELLO_WORLD->HelloWorld
+     * 将下划线大写方式命名的字符串转换为驼峰式。如果转换前的下划线大写方式命名的字符串为空，则返回空字符串。
+     * 例如：HELLO_WORLD-HelloWorld
      * @param name 转换前的下划线大写方式命名的字符串
      * @return 转换后的驼峰式命名的字符串
      */

@@ -64,8 +64,6 @@ public enum IdWorker {
 
     /**
      * 获取下一个ID
-     *
-     * @return
      */
     public synchronized long nextId() {
         long timestamp = timeGen();

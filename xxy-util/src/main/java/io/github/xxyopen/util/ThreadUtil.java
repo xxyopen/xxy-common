@@ -10,6 +10,8 @@ public class ThreadUtil {
 
     /**
      * 根据线程ID获取线程
+     * @param threadId 线程ID
+     * @return 线程对象
      * */
     public static Thread findThread(long threadId) {
         ThreadGroup group = Thread.currentThread().getThreadGroup();
