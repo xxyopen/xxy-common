@@ -1,7 +1,6 @@
 package io.github.xxyopen.cache;
 
 import io.github.xxyopen.cache.builder.CacheBuilder;
-import io.github.xxyopen.cache.timer.ClearTimerExecutor;
 import org.junit.Assert;
 import org.junit.Test;
 

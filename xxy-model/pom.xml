@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>xxy-cache</artifactId>
-    <description>通用缓存</description>
-
+    <artifactId>xxy-model</artifactId>
+    <description>通用模型</description>
 
 </project>

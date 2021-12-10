@@ -9,9 +9,12 @@
     <version>1.0.0-SNAPSHOT</version>
     <modules>
         <module>xxy-cache</module>
+        <module>xxy-util</module>
+        <module>xxy-model</module>
+        <module>xxy-web</module>
     </modules>
     <packaging>pom</packaging>
-    <description>xxy开源公共依赖项目，包括通用工具包、通用缓存、通用日志、通用web配置等</description>
+    <description>xxy开源项目公共依赖，包括通用工具包、通用缓存、通用模型、通用web等模块</description>
     <url>https://github.com/xxyopen/xxy-common</url>
 
     <properties>
@@ -104,6 +107,8 @@
                  javadoc:jar 默认绑定到package生命周期 -->
             </plugin>
         </plugins>
+
+
     </build>
 
 </project>
