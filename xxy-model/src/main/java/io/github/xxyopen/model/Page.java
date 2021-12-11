@@ -1,6 +1,7 @@
 package io.github.xxyopen.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
  * @param <T> 分页集合类型
  */
 @Data
+@NoArgsConstructor
 public class Page<T> {
 
     /**
@@ -31,7 +33,6 @@ public class Page<T> {
      * 分页数据集
      * */
     private List<? extends T> list;
-
 
     /**
      * 该构造函数用于通用分页查询的场景
