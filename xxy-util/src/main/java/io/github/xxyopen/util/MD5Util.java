@@ -2,9 +2,9 @@ package io.github.xxyopen.util;
 
 
 import lombok.SneakyThrows;
-import sun.misc.BASE64Encoder;
 
 import java.security.MessageDigest;
+import java.util.Base64;
 
 /**
  * MD5工具类
@@ -54,8 +54,8 @@ public class MD5Util {
         MessageDigest md = MessageDigest.getInstance("MD5");
         byte[] b1 = md.digest(str.getBytes());
         //将等长字节利用Base64算法转换成字符串
-        BASE64Encoder encoder = new BASE64Encoder();
-        return encoder.encode(b1);
+        Base64.Encoder encoder = Base64.getEncoder();
+        return encoder.encodeToString(b1);
     }
 
     private static final String[] HEX_DIGITS = {"0", "1", "2", "3", "4", "5",
