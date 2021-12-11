@@ -1,4 +1,4 @@
-package io.github.xxyopen.model;
+package io.github.xxyopen.model.resp;
 
 
 import lombok.Data;

@@ -1,5 +1,6 @@
-package io.github.xxyopen.model;
+package io.github.xxyopen.model.resp;
 
+import io.github.xxyopen.model.resp.IResultCode;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

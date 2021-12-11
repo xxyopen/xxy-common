@@ -1,4 +1,4 @@
-package io.github.xxyopen.model;
+package io.github.xxyopen.model.resp;
 
 /**
  * 定义响应状态码结构

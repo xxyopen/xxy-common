@@ -1,7 +1,7 @@
 package io.github.xxyopen.web.exception;
 
-import io.github.xxyopen.model.RestResult;
-import io.github.xxyopen.model.SysResultCode;
+import io.github.xxyopen.model.resp.RestResult;
+import io.github.xxyopen.model.resp.SysResultCode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindException;
 import org.springframework.web.bind.annotation.ExceptionHandler;

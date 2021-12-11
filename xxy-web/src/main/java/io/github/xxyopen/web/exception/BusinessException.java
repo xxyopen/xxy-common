@@ -1,6 +1,6 @@
 package io.github.xxyopen.web.exception;
 
-import io.github.xxyopen.model.IResultCode;
+import io.github.xxyopen.model.resp.IResultCode;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
