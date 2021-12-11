@@ -1,3 +1,4 @@
 # Auto Configure
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-io.github.xxyopen.web.exception.CommonExceptionHandler
+io.github.xxyopen.web.exception.CommonExceptionHandler,\
+io.github.xxyopen.web.util.SpringUtil
